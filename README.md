@@ -279,6 +279,18 @@ We welcome contributions from the community! Here's how to get started:
 
 For bug reports and feature requests, please [open an issue](https://github.com/urchade/GLiNER/issues). For questions and discussions, join us on [Discord](https://discord.gg/x7hQsjX2Kk).
 
+## Fine-Tuning on Domain Entities (GMM)
+
+To prepare the dataset for our studio's domain entities (ART_STYLE, LINEAGE, etc.):
+```bash
+python scripts/prepare_gmm_vocab_dataset.py
+```
+
+To run the fine-tuning process:
+```bash
+python train.py --config configs/config_gmm.yaml
+```
+
 ## Citations
 
 If you find **GLiNER** useful in your research, please consider citing the original paper:
